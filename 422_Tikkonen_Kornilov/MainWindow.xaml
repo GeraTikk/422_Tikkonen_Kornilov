@@ -1,27 +1,25 @@
-﻿<Window x:Class="PracticalWork.MainWindow"
+﻿<Window x:Class="_422_Tikkonen_Kornilov.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Практическая работа" Height="400" Width="300"
         Closing="Window_Closing">
     <Grid>
-        <Image Name="FunctionImage" Width="200" Height="100" Margin="50,13,16,271" />
+        <Image Source="/Рисунок.png" HorizontalAlignment="Left" Height="69" Margin="60,30,0,0" VerticalAlignment="Top" Width="190"/>
 
-        <Label Content="Введите x:" Margin="33,127,187,232" />
-        <TextBox Name="InputTextBox1" Margin="100,134,10,232" />
+        <Label Content="Введите x:" Margin="10,120,200,229" />
+        <TextBox Name="InputXTextBox" Margin="100,120,10,224" ToolTip="Введите значение x" />
 
-        <Label Content="Введите m:" HorizontalAlignment="Left" Margin="28,145,0,0" VerticalAlignment="Top" Height="23" Width="72"/>
-        <TextBox Name="InoutTextBox2" Margin="100,152,0,0" Width="190" Height="16" HorizontalAlignment="Left" VerticalAlignment="Top" TextAlignment="Center" Text="0" TextWrapping="WrapWithOverflow"/>
+        <Label Content="Введите b:" Margin="10,160,200,192" />
+        <TextBox Name="InputBTextBox" Margin="100,160,10,184" ToolTip="Введите значение b" />
 
-        <Label Content="Результат:" Margin="33,160,200,199" />
-        <TextBox Name="ResultTextBox" Margin="100,168,10,199" IsReadOnly="True" />
+        <Label Content="Результат:" Margin="10,200,200,149" />
+        <TextBox Name="ResultTextBox" Margin="100,200,10,144" IsReadOnly="True" ToolTip="Результат вычисления" />
 
-        <RadioButton Name="RadioButtonSh" Content="sh(x)" Margin="10,200,210,169" />
-        <RadioButton Name="RadioButtonX2" Content="x^2" Margin="10,220,210,144" />
-        <RadioButton Name="RadioButtonEx" Content="e^x" Margin="10,240,210,130" />
+        <RadioButton Name="RadioButtonSh" Content="sh(x)" Margin="10,240,239,124" ToolTip="Гиперболический синус" />
+        <RadioButton Name="RadioButtonX2" Content="x^2" Margin="10,260,239,109" ToolTip="Квадрат числа" />
+        <RadioButton Name="RadioButtonEx" Content="e^x" Margin="10,280,239,92" ToolTip="Экспоненциальная функция" />
 
-        <Button Name="CalculateButton" Content="Вычислить" Margin="5,270,166,79" Click="CalculateButton_Click" />
-        <Button Name="ClearButton" Content="Очистить" Margin="134,270,23,79" Click="ClearButton_Click" />
-
-
+        <Button Name="CalculateButton" Content="Вычислить" Margin="10,310,205,37" Click="CalculateButton_Click" ToolTip="Вычислить значение функции" />
+        <Button Name="ClearButton" Content="Очистить" Margin="108,310,98,37" Click="ClearButton_Click" ToolTip="Очистить все поля" />
     </Grid>
 </Window>
